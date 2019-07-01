@@ -1,0 +1,57 @@
+Icecast 2.4.99 for OS/2
+
+Installation
+------------
+
+1. You need RPM/YUM. Type command:
+
+     yum install libgcc1 zlib curl libxml2 libxslt openssl pthread
+
+   or use Arca Noae Package Manager to install these packages.
+
+2. You will need libvorbis and libogg. These libraries can be
+   downloaded from Hobbes:
+
+     http://hobbes.nmsu.edu/download/pub/os2/dev/mm/libvorbis-1.3.5.zip
+     http://hobbes.nmsu.edu/download/pub/os2/dev/mm/libogg-1.3.2.zip
+
+2. Unzip archive containing this file to a directory of your choice.
+
+3. Read documentation http://icecast.org/docs/. Create configuration XML-file
+   (see samples at ./conf) and run:
+
+       icecast.exe -c icecast.xml
+
+   where icecast.xml is your configuration file.
+
+
+Changes in OS/2 version
+-----------------------
+
+I made some modifications for the correct display mp3-stream metadata with
+national character sets on WEB-interface (metadata history). Refer to the
+documentation for instructions on how to configure character set.
+
+
+Other software
+--------------
+
+IceS-ne
+
+   http://hobbes.nmsu.edu/h-search.php?key=ices-ne&pushbutton=Search
+   Source client for broadcasting mp3 stream from files to an Icecast server.
+
+IceS2
+
+   http://hobbes.nmsu.edu/h-search.php?key=ices2&pushbutton=Search
+   Source client for broadcasting ogg/vorbis stream to an Icecast server.
+
+
+
+---
+
+Donations are most welcome!
+PayPal: digi@os2.snc.ru
+
+Andrey Vasilkin, 2016-2019
+E-mail: digi@os2.snc.ru
